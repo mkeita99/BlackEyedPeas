@@ -1,0 +1,230 @@
+body {
+   margin-bottom: 20px;
+   background: #f0f0f0;
+}
+
+main{
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 100%;
+}
+
+.box{
+   display: flex;
+   margin: auto;
+   padding: 10px;
+}
+
+.start-nav,
+.tour-nav {
+    width: 100%;
+    background: #1c9099;
+}
+.start-toplist,
+.tour-toplist {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.start-toplist li,
+.tour-toplist li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+.start-toplist li:hover,
+.tour-toplist li:hover {
+    background: #e91e63;
+    text-decoration: underline;
+}
+.start-toplist li a, 
+.tour-toplist li a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:1000px) {
+    .start-toplist, 
+    .tour-toplist {
+        width: 90%;
+       font-size: 1.3em;
+    }  
+    .start-toplist li, 
+    .tour-toplist li {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/*richtige positionierung der Überschrift*/
+.ueberschrift{
+   float: left;
+   padding: 15px;
+   line-height: 25px;
+   width: 100%;
+   margin-left: 20px;
+}
+
+/*kurze beschreibung der Mitglieder die Mittig stehen soll.*/
+.mitg_distract{
+   margin: 10px;
+   padding: 2em;
+   text-align: center;
+}
+
+/*Die einzelnen Bilder richtige Position*/
+.column {
+   position: relative;
+   float: left;
+   width: 50%;
+   flex: 50%;
+}
+
+/**/
+.image{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.overlay{
+  position: absolute; /*keine änderung der position*/
+  bottom: 0; /*Anzeigen der caption im bild*/
+  background: rgba(0, 0, 0, 0.5); /*Hintergrund soll leicht durchsichtig sein*/
+  color: #f1f1f1; /*Farbe der Schrift*/
+  width: 100%; /*Breite des Bildes*/
+  transition: .3s ease; /*Wie schnell die caption auftaucht*/
+  opacity: 0; /*Wichtig um den rollover Effekt zuhaben*/
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+/*Damit der Rollover Effekt funktioniert
+Hover ist "aktiviert" wenn man auf der Seite mit der Maus drüber fährt*/
+.column:hover .overlay{
+   opacity: 1
+}
+
+.row {
+   display: flex;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul{
+   list-style-type: none;
+   margin: 2em;
+   padding-left: 45px;
+   padding-right: 4em;
+   line-height: 1.6;
+}
+
+ul.Steckbrief li b{
+   display: flex; /*Damit das in der jeweiligen nächsten Zeile angezeigt wird.*/
+}
+
+@media (max-width: 1000px) {
+   ul.Steckbrief li b {
+      display: flex;
+   }
+   img {
+      width: 80%;
+   }
+   figcaption{
+      font-size: 0.8em;
+   }
+}
+
+button{
+   background: #1c9099;
+   display: inline-block; /*Damit der button eine eigene neue Zeile einnimmt*/
+   color: #fff; /*Farbe der Schrift*/
+   border-radius: 5px; /*Weichere Kanten des Button*/
+   padding: 20px; /*Größe des button*/
+   margin-left: 6em; /*Richtiger Abstand zum Steckbrief inhalt*/
+   margin-bottom: 1em; /*Richtiger Abstand zum Steckbrief inhalt*/
+   border: none; /*keine Umrandung*/
+   
+}
+button:hover{
+   background-color: #e91e63;
+   color: #fff;
+}
+
+/*Den richtigen Abstand, des "nach oben" Link.*/
+.oben_link{
+   margin-left: 3%;
+   margin-top: 2%;
+   margin-bottom: 2%;
+}
+
+.oben_link a{
+   color: #1c9099;
+   text-decoration: none
+}
+
+/**/
+footer{
+   display: block;
+   position: absolute;
+   width: 100%;
+   margin: auto;
+   background-color: #e91e63;
+   padding: 2em;
+}
+
+/*Damit alle Links Weiß angezeigt werden und nicht die Farbe verändern, wenn man einmal drauf geglickt hat.*/ 
+a{
+   color: white;
+   text-decoration: none
+}
+
+/*Alle Listen die Links enthalten sollen mit der bestimmten Farbe angezeigt werden*/
+li a{
+   color: #1c9099;
+   text-decoration: none
+}
+
+/*Das ist das Design für das Impressum, um einrückungen zu machen und somit die Seite übersichtlicher wird.*/
+.impr_design{
+   padding-left: 1em;
+   padding-right: 3em;
+   position: relative;
+}
+
+.impr_logo{
+   position: absolute;
+   width: 30%;
+   float: right;
+   margin-left: 55%;
+   margin-right: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+   .overlay {
+      opacity: 1;
+   }
+   .row {
+      display: revert;
+   }
+   main{
+      font-size: 1em;
+   }
+   ul{
+      font-size: 0.9em;
+   }
+   li b{
+      font-size: 1.1em;
+   }
+   h1{
+      font-size: 3em;
+   }
+   h2{
+      font-size: 2.5em;
+   }
+}
