@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+   <!-- Heilmann, Lia Muriel/ Matrikelnummer: 11147084-->
+   <meta charset="UTF-8">
+   <title>Kim Hill</title>
+   <link rel="stylesheet" href="../Mitglieder.css">
+</head>
+   
+<body>
+   
+<div class="oben_link">
+   <a href="Mitglieder.html">Zurück zu den Mitgliedern</a>
+</div>
+   
+<main>
+   
+   <div class="ueberschrift"><h1>Kim Hill</h1></div>
+   
+   <figure>
+      <a href="https://www.bigfm.de/news/30418/kim-hill-war-teil-der-black-eyed-peas"><img src="../Bilder/KimHill.png" alt="Kim Hill" title="bigFM Staff"></a>
+      <figcaption>Kim Hill, erste Sängerin der Black Eyed Peas.</figcaption>
+   </figure>
+   
+   <button onclick="myFunction()">Kurzsteckbrief</button>
+
+     <div id="Steckbrief_container">
+      <ul class="Steckbrief">
+         <li><b>Name:</b>Kimberley Marie Lockett</li>
+         <li><b>Künstlername:</b>Kim Hill</li>
+         <li><b>Geburtsdatum und -ort:</b>7. August 1972 in Syracuse, New York</li>
+         <li><b>Kurzbeschreibung:</b> Kimberley Lockett ist eine US-amerikanische Soul-Sängerin und Songwriterin. Sie wurde bekannt als Stimme der Black Eyed Peas. Sie trennte sich 2000 aufgrund künstlerischer Differenzen von den Black Eyed Peas, denen Kim Hill seit 1995 angehörte. Die Band entwickelte sich musikalisch in eine Richtung, die sie nicht mittragen wollte. Dass die Trennung nicht freundschaftlich verlaufen ist, kann man im Song The Real HipHop auf ihrem 2002 erschienenen Solo-Debüt Suga Hill hören.</li>
+      </ul>
+   </div>  
+   
+   <div class="oben_link">
+      <a href="#top">Nach oben</a>
+   </div>
+   
+</main>
+ 
+<script> 
+   var x = document.getElementById("Steckbrief_container");
+   x.style.display = "none";
+   function myFunction() {
+      var x = document.getElementById("Steckbrief_container");
+      if (x.style.display === "none") {
+         x.style.display = "block";
+      } else {
+         x.style.display = "none";
+      }
+   }
+</script>
+   
+</body>
+</html>
