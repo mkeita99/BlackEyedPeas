@@ -1,0 +1,128 @@
+body {
+   margin: auto;
+   margin-bottom: 20px;
+   background: #f0f0f0;
+}
+
+main{
+   width: 95%;
+   margin-left: auto;
+}
+
+.box{
+   display: flex;
+   margin: auto;
+   padding: 10px;
+}
+.start-nav,
+.tour-nav {
+    width: 100%;
+    background: #1c9099;
+}
+.start-toplist,
+.tour-toplist {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.start-toplist li,
+.tour-toplist li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+.start-toplist li:hover,
+.tour-toplist li:hover {
+    background: #e91e63;
+    text-decoration: underline;
+}
+.start-toplist li a, 
+.tour-toplist li a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:1000px) {
+    .start-toplist, 
+    .tour-toplist {
+        width: 90%;
+    }  
+    .start-toplist li, 
+    .tour-toplist li {
+        display: block;
+        text-align: center;
+    }
+}
+.diskografie-table tbody tr:nth-child(even) { 
+  background-color: floralwhite; 
+  color: #000; 
+}
+
+.diskografie-table td,
+.diskografie-table th,
+.diskografie-table tr,
+.diskografie{
+    padding: 3px 6px;
+    border: 1px solid #1c9099;
+    text-align: center;
+    font-size: 12px;
+}
+.studioalben-figcaption {
+  padding: 30%;
+  text-align: center;
+}
+a jpg { display:none; }
+a:hover jpg { display:block; }
+.tabelle-ueberschrift {
+	background-color: gainsboro; }
+.grammys-lfloat {
+width: 30%;
+height: 250px;
+float: left;
+margin: 0 auto;
+padding-right: 100px;
+}
+.mtv-rfloat {
+width: 60%;
+height: 250px;
+float: right;
+margin: 0 auto;
+padding-left: 0px;
+}
+.bravotto-float{
+width: 60%;
+height: 250px;
+float: right;
+margin: 0 auto;
+padding-left: 0px;
+}
+.SwissMusicAward-float{
+width: 60%;
+height: 250px;
+float: right;
+margin: 0 auto;
+padding-left: 0px;
+}
+.WorldMusicAwards-float{
+width: 60%;
+height: 250px;
+float: left;
+margin: 0 auto;
+padding-left: 0px;
+}
+.wheresthelove-rfloat {
+width: 10%;
+height: 250px;
+float: left;
+margin: 0 auto;
+padding-left: 0px;
+}
+.bandschwarzweiss-float {
+width: 40%;
+height: 250px;
+float: right;
+margin: 0 auto;
+padding-right: 100px;
+}
+.a-BehindTheFrontAlbum.png
+{ display:none; }
+.a:hover BehindTheFrontAlbum { display:block; }
