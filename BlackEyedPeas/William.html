@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+   <!-- Heilmann, Lia Muriel/ Matrikelnummer: 11147084-->
+    <meta charset="UTF-8">
+    <title>will.i.am</title>
+    <link href="../bepstyle.css" rel="stylesheet">
+</head>
+   
+<body>
+   
+<header>
+    <nav>
+        <a href="Mitglieder.html" class="link">Zurück zu den Mitgliedern</a>  
+    </nav>
+    </header>
+   <main>
+   
+   <div class="ueberschrift"><h1 class="roboto">will.i.am</h1></div>
+   
+   <figure>
+      <a href="https://www.flickr.com/photos/nasahqphoto/41601236015/"><img src="../Images/William.png" alt="will.i.am" title="NASA/Aubrey Gemignani"></a>
+      <figcaption>will.i.am bei einem Interview der NASA.</figcaption>
+   </figure>
+   
+   <button onclick="myFunction()">Kurzsteckbrief</button>
+
+   <div id="Steckbrief_container">
+      <ul class="Steckbrief">
+         <li><b>Name:</b> William James Adams Jr.</li>
+         <li><b>Künstlername:</b> <i>will.i.am</i></li>
+         <li><b>Geburtsdatum und -ort:</b> 15. März 1975 in Los Angeles, Kalifornien</li>
+         <li><b>Kurzbeschreibung:</b> William Adams ist ein US-amerikanischer Rapper, Sänger, Songwriter, Musikproduzent und gelegentlicher Schauspieler und Synchronsprecher. International bekannt wurde er als Mitglied der Hip-Hop-Band The Black Eyed Peas. Er produzierte Songs für Michael Jackson und U2. Außerdem ist er seit der ersten Staffel im Jahr 2012 Jurymitglied und Coach in der britischen Gesangs-Castingshow The Voice UK, die auf BBC One ausgestrahlt wird. </li>
+      </ul>
+   </div>
+
+   </main>
+    
+   <footer>
+       <nav class="foot_impressum">
+           <a href="#top" class="lfloat">Nach oben</a>
+        </nav>
+   </footer>
+
+
+<script>
+   var x = document.getElementById("Steckbrief_container");
+   x.style.display = "none";
+   function myFunction() {
+      var x = document.getElementById("Steckbrief_container");
+      if (x.style.display === "none") {
+         x.style.display = "block";
+      } else {
+         x.style.display = "none";
+      }
+   }
+</script>
+   
+</body>
+</html>
