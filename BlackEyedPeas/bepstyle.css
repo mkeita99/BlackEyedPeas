@@ -255,24 +255,11 @@ button:hover {
 
 
 
-/*Auszeichnung - sofern nicht von Biografie entnommen.*/
-.auszeich-sec {
-    padding-bottom: 450px;
-    width: 80%;
+/*Auszeichnung*/
+.gitter-container{
+   display: grid;
+   grid-template-columns: auto auto;
 }
-.auszeich-float {
-    width: 700px;
-    height: 250px;
-    float: left;
-    margin: 0 auto;
-}
-.auszeich-rfloat {
-    width: 400px;
-    height: 250px;
-    float: right;
-    margin: 0 auto;
-}
-
 
 /*Das Design für das Impressum, für Einrückungen -> übersichtlicher*/
 .impr_design {
@@ -338,26 +325,7 @@ footer {
 
 
 
-@media screen and (max-width: 1250px) {
-   .auszeich-float,
-   .auszeich-rfloat {
-      display: block;
-      width: 80%;
-   }
-   .auszeich-float img,
-   .auszeich-rfloat img {
-      width: 90%;
-      height: 450px;  
-   }
-   .auszeich-list {
-      padding-top: 550px;  
-   }
-   .auszeich-list ol {
-      padding-top: 550px;  
-   }
-   .auszeich-sec {
-      padding-bottom: 100px;
-   }
+@media screen and (max-width: 1450px) {
    .impr_logo {
       display: flex;
       width: 20%;
@@ -373,28 +341,18 @@ footer {
       margin-top: 60px;
    }
    .bio-float,
-   .bio-rfloat,
-   .auszeich-float,
-   .auszeich-rfloat {
+   .bio-rfloat {
       display: block;
       width: 100%;
       text-align: center;
    }
    .bio-float img, 
-   .bio-rfloat img,
-   .auszeich-float img,
-   .auszeich-rfloat img {
+   .bio-rfloat img {
       width: 70%;
       height: 450px;
    }
    .bio-div p {
       padding-top: 550px;
-   }
-   .auszeich-list {
-      padding-top: 550px;
-   }
-   .auszeich-sec {
-      padding-bottom: 200px;
    }
    .start-toplist, 
    .tour-toplist {
@@ -457,5 +415,8 @@ footer {
    }
    h2 {
       font-size: 2.3em;
+   }
+   .gitter-container {
+     display: revert;
    }
 }
